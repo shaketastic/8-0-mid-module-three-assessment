@@ -1,1 +1,23 @@
+#product-list-container {
+    display: grid;
+}
 
+.products {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+    margin: 25px;
+    justify-items: center;
+}
+
+.ProductCard {
+    box-shadow: -6px -6px 10px -5px;
+    width: 300px;
+    text-align: center;
+    background-color: white;
+}
+
+.description {
+    padding: 0 10px;
+}

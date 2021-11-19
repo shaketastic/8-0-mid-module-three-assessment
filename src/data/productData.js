@@ -1,4 +1,5 @@
-const productData = [
+export default {
+  "productData": [
   {
     id: "36bb1ef5-b3fe-4646-ab48-97716812831d",
     name: "Baseball Glove",
@@ -46,7 +47,6 @@ const productData = [
     description:
       "This comfortable chair has been in our house for years. It reclines!",
     img: "https://via.placeholder.com/200/0000FF/FFFFFF?text=Comfy+Armchair",
-  },
-];
-
-export default productData;
+    },
+  ]
+}
