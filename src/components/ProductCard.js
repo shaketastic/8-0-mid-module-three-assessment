@@ -1,30 +1,24 @@
 import { Component } from "react";
+import App from "...App";
+import productData from "../data/productData";
 
 class ProductCard extends Component {
-    constructor(){
-        super();
-    }
-    render(){
-        const { name, img, description, price } = this.props.products;
-        const { productNameArr } = this.props.products;
-        return(
-            <div className="products-item-container">
-                { productNameArr }
-                <h3>{name}</h3> 
-                <div>Price: {price}</div>
-                <div>
-                <button>Add to Cart</button>
-                </div>
-    
-                <img src={img} alt="Product Image" />
-            <div>
-                  
-            </div>    
-            
-            <div>{description}</div>
-         </div>   
-    );
-  }
-}
 
-export default ProductCard;
+    render(){
+        return(
+            <div className="products">
+                {productData.map(products) => ( 
+                <h3>{products.name}</h3> 
+                <div>Price: ${products.price.toFixed(2)</div>
+                <br />
+                <button onClick={() => this.props.productAddtoCart} >
+                Add to Cart
+                </button>
+                <br />
+                <img src={img} alt="Product Image" />
+                <div>{products.description}</div>
+            </div>
+    
+        </div>
+
+        export default ProductCard;

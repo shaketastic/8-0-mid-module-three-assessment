@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Checkout from "./Checkout";
 
 class Cart extends Component {
     render(){
